@@ -29,7 +29,19 @@ namespace IEPop
             string cleanargs;
             if (args.Length == 1)
             {
-                cleanargs = args[0].Substring(6);
+                cleanargs = args[0];
+                if (cleanargs.StartsWith("iepop"))
+                {
+                    cleanargs = cleanargs.Substring(5);
+                }
+                if (cleanargs.StartsWith(":"))
+                {
+                    cleanargs = cleanargs.Substring(1);
+                }
+                if (cleanargs.StartsWith("//"))
+                {
+                    cleanargs = cleanargs.Substring(2);
+                }
             }
             else { return; }
             //foreach (var arg in cleanargs.Split)
