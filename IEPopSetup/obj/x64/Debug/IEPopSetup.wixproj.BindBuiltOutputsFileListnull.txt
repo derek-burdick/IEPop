@@ -1,3 +1,0 @@
-C:\Users\derek_burdick\Documents\Visual Studio 2015\Projects\IEPop\IEPopSetup\bin\x64\Debug\cab1.cab
-C:\Users\derek_burdick\Documents\Visual Studio 2015\Projects\IEPop\IEPopSetup\bin\x64\Debug\IEPopSetup.msi
-C:\Users\derek_burdick\Documents\Visual Studio 2015\Projects\IEPop\IEPopSetup\bin\x64\Debug\IEPopSetup.wixpdb
