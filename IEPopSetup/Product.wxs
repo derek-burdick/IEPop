@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <Product Id="*" Name="IEPop" Language="1033" Version="1.0.0.0" Manufacturer="ExampleCode" UpgradeCode="7e910953-b026-4a09-b618-2ef16df7f9f0">
+    <Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" Platform="x64" />
+
+    <MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+    <MediaTemplate />
+
+    <Feature Id="ProductFeature" Title="IEPopSetup2" Level="1">
+      <ComponentRef Id="ProductComponent" />
+    </Feature>
+  </Product>
+
+  <Fragment>
+    <Directory Id="TARGETDIR" Name="SourceDir">
+      <Directory Id="ProgramFiles64Folder">
+        <Directory Id="INSTALLFOLDER" Name="IEPop" >
+          <Component Id="ProductComponent">
+            <File Source="$(var.IEPop.TargetPath)" ProcessorArchitecture="x64" />
+            <RegistryKey Root="HKCR"
+              Key="iepop"
+              Action="createAndRemoveOnUninstall">
+              <RegistryValue Type="string" Name="URL Protocol" Value=""/>
+              <RegistryValue Type="string" Value="URL:IE Pop"/>
+              <RegistryKey Key="DefaultIcon">
+                <RegistryValue Type="string" Value="IEPop.exe,1" />
+              </RegistryKey>
+              <RegistryKey Key="shell\open">
+                <RegistryValue Type="string" Key="CommandId" Value="IE.Protocol"/>
+                <RegistryKey Key="command">
+                  <RegistryValue Type="string" Value="&quot;[INSTALLFOLDER]IEPop.exe&quot; &quot;%1&quot;" />
+                </RegistryKey>
+              </RegistryKey>
+            </RegistryKey>
+            <!-- TODO: Insert files, registry keys, and other resources here. -->
+          </Component>
+        </Directory>
+      </Directory>
+    </Directory>
+  </Fragment>
+</Wix>

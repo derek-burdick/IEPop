@@ -1,0 +1,10 @@
+c:\users\derek_burdick\documents\visual studio 2015\Projects\IEPop\IEPop\bin\Debug\IEPop.exe.config
+c:\users\derek_burdick\documents\visual studio 2015\Projects\IEPop\IEPop\obj\Debug\IEPop.Properties.Resources.resources
+c:\users\derek_burdick\documents\visual studio 2015\Projects\IEPop\IEPop\obj\Debug\IEPop.csproj.GenerateResource.Cache
+c:\users\derek_burdick\documents\visual studio 2015\Projects\IEPop\IEPop\obj\Debug\Interop.SHDocVw.dll
+c:\users\derek_burdick\documents\visual studio 2015\Projects\IEPop\IEPop\obj\Debug\IEPop.csproj.ResolveComReference.cache
+c:\users\derek_burdick\documents\visual studio 2015\Projects\IEPop\IEPop\bin\Debug\IEPop.exe
+c:\users\derek_burdick\documents\visual studio 2015\Projects\IEPop\IEPop\bin\Debug\IEPop.pdb
+c:\users\derek_burdick\documents\visual studio 2015\Projects\IEPop\IEPop\obj\Debug\IEPop.exe
+c:\users\derek_burdick\documents\visual studio 2015\Projects\IEPop\IEPop\obj\Debug\IEPop.pdb
+C:\Users\derek_burdick\Documents\Visual Studio 2015\Projects\IEPop\IEPop\obj\Debug\IEPop.Form1.resources
